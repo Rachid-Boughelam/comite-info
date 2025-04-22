@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComitéInfo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>Bienvenue sur la page web de notre Comité Informatique</h1>
+
+  <h2> Nos participants </h2>
+  <ul>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>Et Mr Rachid</li>
+  </ul>
+
+  <h2> Notre programme </h2>
+
+  <ul>
+    <li>Déclaration de variables avec <code>let</code>, <code>var</code> et <code>const</code></li>
+    <pre><code>
+
+        const pays = "Canada"; //ne change jamais
+        var nom = "Alice";
+        let age = 30;
+        console.log("Bonjour, je m'appelle", nom , "je vis au" , pays , "et j'ai", age ,"ans."); 
+        // affichera Bonjour, je m'appelle Alice je vis au Canada et j'ai 30 ans.
+
+    </code></pre>
+    <li>Les conditions avec <code>if</code> et <code>else</code></li>
+    <pre><code>
+
+        let temperature = 25;
+
+        if (temperature > 30) {
+        console.log("Il fait très chaud !");
+        } else if (temperature > 20) {
+        console.log("Il fait bon.");
+        } else {
+        console.log("Il fait frais.");
+        }
+        // affichera il fait bon
+
+    </code></pre>
+    <li>Les boucles avec <code>while</code>, <code>do while</code> et <code>for</code></li>
+    <pre><code>
+
+        // while
+        let i = 0;
+        while (i < 3) {
+        console.log(i);
+        i++;
+        }
+        // affichera 0 1 2
+
+        // do while
+        let j = 0;
+        do {
+        console.log(j);
+        j++;
+        } while (j < 3);
+        // affichera 0 1 2
+
+        // for
+        for (let k = 0; k < 3; k++) {
+        console.log(k);
+        }
+        // affichera 0 1 2
+
+    </code></pre>
+  </ul>
+
+  <h2> Notre projet </h2>
+
+  <p>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, 
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+    Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  
+  <button id="clic">Clique-moi !</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
