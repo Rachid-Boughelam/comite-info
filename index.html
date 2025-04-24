@@ -12,9 +12,6 @@
   <h1>Bienvenue sur la page web de notre Comité Informatique</h1>
 
   <h2> Nos participants </h2>
-  <h3> Titre h3</h3>
-  <h4> Titre h4 </h4>
-  <h5> Titre h5 </h5>
 
   <ul>
     <li>Greg Roman</li>
@@ -23,6 +20,8 @@
   </ul>
 
   <h2> Notre programme </h2>
+
+  <h3>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a> et choisi NodeJS (pour JavaScript) et teste le code suivant </h3>
 
   <ul>
     <li>Déclaration de variables avec <code>let</code>, <code>var</code> et <code>const</code></li>
@@ -78,6 +77,54 @@
     </code></pre>
   </ul>
 
+  <h2> Première application web avec html </h2>
+
+  <ul>
+    <li>1. installer vs code : https://code.visualstudio.com</li>
+    <li>2. créer un dossier quelque part et le nommer test par exemple</li>
+    <li>3. ouvrir vs code, et cliquer sur "open folder" et ouvrir le dossier test</li>
+    <li>4. dans "extensions" à gauche installer live server</li>
+    <li>5. créer un fichier index.html en effectuant un clique droit "new file" et ajouter la ligne suivante :</li>
+    <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
+    <li>6. sauvegarde avec ctrl + s</li>
+    <li>7. clique droit sur index.html et "open with live server"</li>
+    <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">clique ici !</a></li>
+  </ul>
+
+  <h2> Ajout du CSS pour le style </h2>
+
+  <ul>
+    <li>1. créer un deuxième fichier style.css</li>
+    <li>2. personnaliser le style du titre h1 comme ceci :</li>
+    <pre><code>
+      h1{
+        color:green;
+      }
+    </code></pre>
+    <li>4. ton titre h1 change de couleur</li>
+    <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">clique ici !</a></li>
+  </ul>
+
+  <h2> Première intéraction avec JavaScript </h2>
+
+  <ul>
+    <li>1. ajoute un bouton à index.html qu'on va nommer "clic":</li>
+    <pre><code>
+    <button id="clic">Clique-moi !</button>
+    </code></pre>
+    <li>2. ajoute un fichier script.js qui va activer un évènement en cliquant sur le bouton nommé "clic"</li>
+    <pre><code>
+      document.getElementById('clic').addEventListener('click', () =&gt; {
+        alert('Tu as cliqué ! 🎉');
+      });
+      </code></pre>
+    <li>3. clique sur le bouton !</li>
+    <li>Tu veux aller plus loin avec JavaScript ? => <a href="https://www.w3schools.com/js/" target="_blank">clique ici !</a></li>
+
+
+  </ul>
+
+
   <h2> Notre projet </h2>
 
   <p>
@@ -88,6 +135,8 @@
     sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
     Aldus PageMaker including versions of Lorem Ipsum.
   </p>
+
+
   
   <button id="clic">Clique-moi !</button>
 
