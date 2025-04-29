@@ -32,3 +32,26 @@ body {
   h1{
     color:green;
   }
+
+  .toggle-title {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .toggle-content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .toggle-content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
