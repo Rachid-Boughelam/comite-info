@@ -3,41 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ComitéInfo</title>
+  <title>Comité Informatique</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <h1>Bienvenue sur la page web de notre Comité Informatique</h1>
+<h1>Bienvenue sur la page web de notre Comité Informatique</h1>
 
-  <h2 class="toggle-title">Présentation</h2>
-  <div class="toggle-content hidden">
-    <p>
-      Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.  
-      Retrouvez-nous à la bibliothèque chaque jour de 12h45 à 13h30.  
-      Nous serons ravis d’échanger avec vous !
-    </p>
-  </div>
+<h2 class="toggle-title">Présentation</h2>
+<div class="toggle-content hidden">
+  <p>
+    Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.  
+    Retrouvez-nous à la bibliothèque chaque jour de 12h45 à 13h30.  
+    Nous serons ravis d’échanger avec vous !
+  </p>
+  <p>Les membres :</p>
+  <ul>
+    <li>M. Rachid</li>
+    <li>Gregory Roman</li>
+    <li>Matthis Paillant</li>
+  </ul>
+</div>
 
+<h2 class="toggle-title">Bases en algorithme</h2>
+<div class="toggle-content hidden">
+  <h3>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a>, choisis NodeJS (pour JavaScript) et teste le code suivant :</h3>
 
-  <h2 class="toggle-title">Bases en algorithme</h2>
-  <div class="toggle-content hidden">
-    <h3>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a> et choisi NodeJS (pour JavaScript) et teste le code suivant</h3>
-
-    <ul>
-      <li>Déclaration de variables avec <code>let</code>, <code>var</code> et <code>const</code></li>
-      <pre><code>
-const pays = "Canada"; //ne change jamais
+  <ul>
+    <li>Déclaration de variables avec <code>let</code>, <code>var</code> et <code>const</code></li>
+  </ul>
+  <pre><code>const pays = "Canada";
 var nom = "Alice";
 let age = 30;
-console.log("Bonjour, je m'appelle", nom , "je vis au" , pays , "et j'ai", age ,"ans."); 
-// affichera Bonjour, je m'appelle Alice je vis au Canada et j'ai 30 ans.
-      </code></pre>
+console.log("Bonjour, je m'appelle", nom, "je vis au", pays, "et j'ai", age, "ans.");</code></pre>
 
-      <li>Les conditions avec <code>if</code> et <code>else</code></li>
-      <pre><code>
-let temperature = 25;
+  <ul>
+    <li>Les conditions avec <code>if</code> et <code>else</code></li>
+  </ul>
+  <pre><code>let temperature = 25;
 
 if (temperature > 30) {
   console.log("Il fait très chaud !");
@@ -45,19 +48,17 @@ if (temperature > 30) {
   console.log("Il fait bon.");
 } else {
   console.log("Il fait frais.");
-}
-// affichera il fait bon
-      </code></pre>
+}</code></pre>
 
-      <li>Les boucles avec <code>while</code>, <code>do while</code> et <code>for</code></li>
-      <pre><code>
-// while
+  <ul>
+    <li>Les boucles avec <code>while</code>, <code>do while</code> et <code>for</code></li>
+  </ul>
+  <pre><code>// while
 let i = 0;
 while (i < 3) {
   console.log(i);
   i++;
 }
-// affichera 0 1 2
 
 // do while
 let j = 0;
@@ -65,79 +66,73 @@ do {
   console.log(j);
   j++;
 } while (j < 3);
-// affichera 0 1 2
 
 // for
 for (let k = 0; k < 3; k++) {
   console.log(k);
-}
-// affichera 0 1 2
-      </code></pre>
-    </ul>
-  </div>
+}</code></pre>
+</div>
 
-  <h2 class="toggle-title">Première application web avec html</h2>
-  <div class="toggle-content hidden">
-    <ul>
-      <li>1. installer vs code : https://code.visualstudio.com</li>
-      <li>2. créer un dossier quelque part et le nommer test par exemple</li>
-      <li>3. ouvrir vs code, et cliquer sur "open folder" et ouvrir le dossier test</li>
-      <li>4. dans "extensions" à gauche installer live server</li>
-      <li>5. créer un fichier index.html en effectuant un clique droit "new file" et ajouter la ligne suivante :</li>
-      <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
-      <li>6. sauvegarde avec ctrl + s</li>
-      <li>7. clique droit sur index.html et "open with live server"</li>
-      <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">clique ici !</a></li>
-    </ul>
-  </div>
+<h2 class="toggle-title">Première application web avec HTML</h2>
+<div class="toggle-content hidden">
+  <ul>
+    <li>1. Installer VS Code : <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">Télécharger VS Code</a></li>
+    <li>2. Créer un dossier, par exemple nommé <code>test</code></li>
+    <li>3. Ouvrir VS Code et cliquer sur "Open folder", puis ouvrir ce dossier</li>
+    <li>4. Dans "Extensions", installer <strong>Live Server</strong></li>
+    <li>5. Créer un fichier <code>index.html</code> avec ce contenu :</li>
+  </ul>
+  <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
+  <ul>
+    <li>6. Sauvegarder (Ctrl + S)</li>
+    <li>7. Clic droit sur <code>index.html</code> > "Open with Live Server"</li>
+    <li>Tu veux aller plus loin avec HTML ? => <a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">clique ici !</a></li>
+  </ul>
+</div>
 
-  <h2 class="toggle-title">Ajout du CSS pour le style</h2>
-  <div class="toggle-content hidden">
-    <ul>
-      <li>1. créer un deuxième fichier style.css</li>
-      <li>2. personnaliser le style du titre h1 comme ceci :</li>
-      <pre><code>
-h1 {
+<h2 class="toggle-title">Ajout du CSS pour le style</h2>
+<div class="toggle-content hidden">
+  <ul>
+    <li>1. Créer un fichier <code>style.css</code></li>
+    <li>2. Personnaliser le style du titre <code>h1</code> comme ceci :</li>
+  </ul>
+  <pre><code>h1 {
   color: green;
-}
-      </code></pre>
-      <li>4. ton titre h1 change de couleur</li>
-      <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">clique ici !</a></li>
-    </ul>
-  </div>
+}</code></pre>
+  <ul>
+    <li>3. Enregistrer le fichier CSS</li>
+    <li>4. Ton titre <code>h1</code> change de couleur</li>
+    <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">clique ici !</a></li>
+  </ul>
+</div>
 
-  <h2 class="toggle-title">Première interaction avec JavaScript</h2>
-  <div class="toggle-content hidden">
-    <ul>
-      <li>1. ajoute un bouton à index.html qu'on va nommer "clic":</li>
-      <pre><code>
-&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;
-      </code></pre>      
-      <li>2. ajoute un fichier script.js qui va activer un évènement en cliquant sur le bouton nommé "clic"</li>
-      <pre><code>
-document.getElementById('clic').addEventListener('click', () => {
+<h2 class="toggle-title">Première interaction avec JavaScript</h2>
+<div class="toggle-content hidden">
+  <ul>
+    <li>1. Ajoute ce bouton à <code>index.html</code> :</li>
+  </ul>
+  <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
+  <ul>
+    <li>2. Ajoute un fichier <code>script.js</code> contenant ce code :</li>
+  </ul>
+  <pre><code>document.getElementById('clic').addEventListener('click', () => {
   alert('Tu as cliqué ! 🎉');
-});
-      </code></pre>
-      <li>3. clique sur le bouton !</li>
-      <li>Tu veux aller plus loin avec JavaScript ? => <a href="https://www.w3schools.com/js/" target="_blank">clique ici !</a></li>
-      <button id="clic">Clique-moi !</button>
-    </ul>
-  </div>
+});</code></pre>
+  <ul>
+    <li>3. Clique sur le bouton !</li>
+    <li>Tu veux aller plus loin avec JavaScript ? => <a href="https://www.w3schools.com/js/" target="_blank">clique ici !</a></li>
+  </ul>
+  <br>
+  <button id="clic">Clique-moi !</button>
+</div>
 
-  <h2 class="toggle-title">Notre projet</h2>
-  <div class="toggle-content hidden">
-    <h3>Projet de Mr Duncan :</h3>
-    <p>
-      Faire un site qui compte de les journées d'école jusqu'à la centième journée et qui affichera alors un message
-    </p>
-    <h3>Preuve de conception :</h3>
-      <p id="date-du-jour"></p>
-      <p>Il reste <span id="jours-calendaires"></span> jours calendaires et <span id="jours-ouvres"></span> jours ouvrés</p>
-      <p>avant la fin de l'année !</p>      
-  </div>
+<h2 class="toggle-title">Projets</h2>
+<div class="toggle-content hidden">
+  <h3>Projet "Presque Fini"</h3>
+  <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
