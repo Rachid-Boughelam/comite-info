@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Comité Informatique</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card, .subcard {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+      background-color: #f9f9f9;
+    }
+
+    .toggle-title, .sub-toggle-title {
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin: -16px -16px 16px -16px;
+      border-bottom: 1px solid #ccc;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggle-title:hover, .sub-toggle-title:hover {
+      background-color: #d0d0d0;
+    }
+
+    .toggle-content, .sub-toggle-content {
+      padding: 8px 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Bienvenue sur la page web de notre Comité Informatique</h1>
+  <h1>Bienvenue sur la page web de notre Comité Informatique</h1>
 
-<h2 class="toggle-title">Présentation</h2>
-<div class="toggle-content hidden">
-  <p>
-    Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.  
-    Retrouvez-nous à la bibliothèque chaque jour de 12h45 à 13h30.  
-    Nous serons ravis d’échanger avec vous !
-  </p>
-  <p>Les membres :</p>
-  <ul>
-    <li>M. Rachid</li>
-    <li>Gregory Roman</li>
-    <li>Matthis Paillant</li>
-  </ul>
-</div>
+  <!-- Présentation -->
+  <div class="card">
+    <h2 class="toggle-title">Présentation</h2>
+    <div class="toggle-content hidden">
+      <p>
+        Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.  
+        Retrouvez-nous à la bibliothèque chaque jour de 12h45 à 13h30.  
+        Nous serons ravis d’échanger avec vous !
+      </p>
+      <p>Les membres :</p>
+      <ul>
+        <li>M. Rachid</li>
+        <li>Gregory Roman</li>
+        <li>Matthis Paillant</li>
+      </ul>
+    </div>
+  </div>
 
-<h2 class="toggle-title">Bases en algorithme</h2>
-<div class="toggle-content hidden">
-  <h3>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a>, choisis NodeJS (pour JavaScript) et teste le code suivant :</h3>
+  <!-- Projets -->
+  <div class="card">
+    <h2 class="toggle-title">Projets</h2>
+    <div class="toggle-content hidden">
+      <h3>Projet "Presque Fini"</h3>
+      <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
+    </div>
+  </div>
 
-  <ul>
-    <li>Déclaration de variables avec <code>let</code>, <code>var</code> et <code>const</code></li>
-  </ul>
-  <pre><code>const pays = "Canada";
+  <!-- Apprentissage -->
+<div class="card">
+  <h2 class="toggle-title">Apprentissage</h2>
+  <div class="toggle-content hidden">
+    <!-- Sous-carte : Bases en algorithme -->
+    <div class="subcard">
+      <h3 class="sub-toggle-title">Bases en algorithme</h3>
+      <div class="sub-toggle-content hidden">
+        <p>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a></p>
+
+        <ul><li>Déclaration de variables</li></ul>
+        <pre><code>const pays = "Canada";
 var nom = "Alice";
 let age = 30;
 console.log("Bonjour, je m'appelle", nom, "je vis au", pays, "et j'ai", age, "ans.");</code></pre>
 
-  <ul>
-    <li>Les conditions avec <code>if</code> et <code>else</code></li>
-  </ul>
-  <pre><code>let temperature = 25;
+        <ul><li>Conditions</li></ul>
+        <pre><code>let temperature = 25;
 
 if (temperature > 30) {
   console.log("Il fait très chaud !");
@@ -50,10 +101,8 @@ if (temperature > 30) {
   console.log("Il fait frais.");
 }</code></pre>
 
-  <ul>
-    <li>Les boucles avec <code>while</code>, <code>do while</code> et <code>for</code></li>
-  </ul>
-  <pre><code>// while
+        <ul><li>Boucles</li></ul>
+        <pre><code>// while
 let i = 0;
 while (i < 3) {
   console.log(i);
@@ -71,68 +120,75 @@ do {
 for (let k = 0; k < 3; k++) {
   console.log(k);
 }</code></pre>
-</div>
+      </div>
+    </div>
 
-<h2 class="toggle-title">Première application web avec HTML</h2>
-<div class="toggle-content hidden">
-  <ul>
-    <li>1. Installer VS Code : <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">Télécharger VS Code</a></li>
-    <li>2. Créer un dossier, par exemple nommé <code>test</code></li>
-    <li>3. Ouvrir VS Code et cliquer sur "Open folder", puis ouvrir ce dossier</li>
-    <li>4. Dans "Extensions", installer <strong>Live Server</strong></li>
-    <li>5. Créer un fichier <code>index.html</code> avec ce contenu :</li>
-  </ul>
-  <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
-  <ul>
-    <li>6. Sauvegarder (Ctrl + S)</li>
-    <li>7. Clic droit sur <code>index.html</code> > "Open with Live Server"</li>
-    <li>Tu veux aller plus loin avec HTML ? => <a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">clique ici !</a></li>
-  </ul>
-</div>
+    <!-- Sous-carte : HTML -->
+    <div class="subcard">
+      <h3 class="sub-toggle-title">Première application web avec HTML</h3>
+      <div class="sub-toggle-content hidden">
+        <ul>
+          <li>1. Télécharger <a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
+          <li>2. Créer un dossier nommé <code>test</code></li>
+          <li>3. Ouvrir ce dossier avec VS Code</li>
+          <li>4. Installer l'extension <strong>Live Server</strong></li>
+          <li>5. Créer un fichier <code>index.html</code> :</li>
+        </ul>
+        <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
+        <ul>
+          <li>6. Enregistrer (Ctrl + S)</li>
+          <li>7. Ouvrir avec Live Server</li>
+          <li><a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">Aller plus loin</a></li>
+        </ul>
+      </div>
+    </div>
 
-<h2 class="toggle-title">Ajout du CSS pour le style</h2>
-<div class="toggle-content hidden">
-  <ul>
-    <li>1. Créer un fichier <code>style.css</code></li>
-    <li>2. Personnaliser le style du titre <code>h1</code> comme ceci :</li>
-  </ul>
-  <pre><code>h1 {
+    <!-- Sous-carte : CSS -->
+    <div class="subcard">
+      <h3 class="sub-toggle-title">Ajout du CSS pour le style</h3>
+      <div class="sub-toggle-content hidden">
+        <ul>
+          <li>1. Créer un fichier <code>style.css</code></li>
+          <li>2. Ajouter ce code :</li>
+        </ul>
+        <pre><code>h1 {
   color: green;
 }</code></pre>
-  <ul>
-    <li>3. Enregistrer le fichier CSS</li>
-    <li>4. Ton titre <code>h1</code> change de couleur</li>
-    <li>Tu veux aller plus loin avec CSS ? => <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">clique ici !</a></li>
-  </ul>
-</div>
+        <ul>
+          <li>3. Enregistrer</li>
+          <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">Aller plus loin</a></li>
+        </ul>
+      </div>
+    </div>
 
-<h2 class="toggle-title">Première interaction avec JavaScript</h2>
-<div class="toggle-content hidden">
-  <ul>
-    <li>1. Ajoute ce bouton à <code>index.html</code> :</li>
-  </ul>
-  <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
-  <ul>
-    <li>2. Ajoute un fichier <code>script.js</code> contenant ce code :</li>
-  </ul>
-  <pre><code>document.getElementById('clic').addEventListener('click', () => {
+    <!-- Sous-carte : JS -->
+    <div class="subcard">
+      <h3 class="sub-toggle-title">Première interaction avec JavaScript</h3>
+      <div class="sub-toggle-content hidden">
+        <ul>
+          <li>1. Ajouter ce bouton à <code>index.html</code> :</li>
+        </ul>
+        <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
+        <ul>
+          <li>2. Créer un fichier <code>script.js</code> avec ce contenu :</li>
+        </ul>
+        <pre><code>document.getElementById('clic').addEventListener('click', () => {
   alert('Tu as cliqué ! 🎉');
 });</code></pre>
-  <ul>
-    <li>3. Clique sur le bouton !</li>
-    <li>Tu veux aller plus loin avec JavaScript ? => <a href="https://www.w3schools.com/js/" target="_blank">clique ici !</a></li>
-  </ul>
-  <br>
-  <button id="clic">Clique-moi !</button>
+        <ul>
+          <li>3. Clique sur le bouton !</li>
+          <li><a href="https://www.w3schools.com/js/" target="_blank">Aller plus loin</a></li>
+        </ul>
+        <br>
+        <button id="clic">Clique-moi !</button>
+      </div>
+    </div>
+  </div>
+</div>    
 </div>
+  </div>
 
-<h2 class="toggle-title">Projets</h2>
-<div class="toggle-content hidden">
-  <h3>Projet "Presque Fini"</h3>
-  <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
-</div>
-
-<script src="script.js"></script>
-
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
