@@ -26,6 +26,7 @@
         <li>M. Rachid</li>
         <li>Gregory Roman</li>
         <li>Matthis Paillant</li>
+        <li>Noah Prevost</li>
       </ul>
     </div>
   </div>
@@ -33,10 +34,12 @@
   <!-- Projets -->
   <div class="card">
     <h2 class="toggle-title">Projets</h2>
+
     <div class="toggle-content hidden">
       <h3>Projet "Presque Fini" : affichage du nombre de jours restants avant la fin de l'année scolaire</h3>
       <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
     </div>
+    
   </div>
 
   <!-- Apprentissage -->
@@ -148,6 +151,98 @@ for (let k = 0; k < 3; k++) {
         <button id="clic">Clique-moi !</button>
       </div>
     </div>
+
+    <div class="subcard">
+  <h3 class="sub-toggle-title">Exercice : réalisation d'une carte virtuelle</h3>
+  <div class="sub-toggle-content hidden">
+
+    <h4>1ère étape : Structure HTML</h4>
+    <p>Créez une carte contenant :</p>
+    <ul>
+      <li>Une <code>div</code> avec la classe <code>card</code>.</li>
+      <li>Une image (avec <code>src</code> vers une photo et un <code>alt</code> descriptif).</li>
+      <li>Un titre <code>h2</code> avec un prénom.</li>
+      <li>Un paragraphe <code>p</code> décrivant brièvement la personne.</li>
+      <li>Un bouton <code>button</code> avec un texte "Changer couleur".</li>
+    </ul>
+
+    <h4>2ème étape : Personnalisation CSS</h4>
+    <p>Ajoutez du style pour :</p>
+    <ul>
+      <li>Définir la largeur de la carte, ajouter une bordure arrondie et une ombre.</li>
+      <li>Centrez le texte et appliquez une police agréable.</li>
+      <li>Rendre l'image ronde avec une taille fixe et un espace en dessous.</li>
+      <li>Styliser le bouton avec une couleur de fond bleue, texte blanc, coins arrondis et effet au survol.</li>
+    </ul>
+
+    <h4>3ème étape : Animation JS</h4>
+    <p>Avec JavaScript :</p>
+    <ul>
+      <li>Sélectionnez la carte et le bouton dans le DOM.</li>
+      <li>Ajoutez un écouteur d’événement au clic sur le bouton.</li>
+      <li>Au clic, changez la couleur de fond de la carte en jaune clair.</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="subcard">
+  <h3 class="sub-toggle-title">Solution : réalisation d'une carte virtuelle</h3>
+  <div class="sub-toggle-content hidden">
+
+    <h4>1ère étape : Structure HTML</h4>
+    <pre><code>&lt;div class="card"&gt;
+  &lt;img src="photo.jpg" alt="Photo de profil" /&gt;
+  &lt;h2&gt;Jean Dupont&lt;/h2&gt;
+  &lt;p&gt;Développeur web débutant.&lt;/p&gt;
+  &lt;button&gt;Changer couleur&lt;/button&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h4>2ème étape : Personnalisation CSS</h4>
+    <pre><code>.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    </code></pre>
+
+    <h4>3ème étape : Animation JS</h4>
+    <pre><code>
+      const card = document.querySelector('.card');
+      const button = document.querySelector('button');
+
+      button.addEventListener('click', () => {
+      card.style.backgroundColor = '#fff9c4'; 
+    </code></pre>
+
+  </div>
+</div>
+
+        </div>
+
+
+
   </div>
 </div>    
 </div>
