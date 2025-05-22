@@ -1,4 +1,4 @@
-// ========== Affiche la date du jour ==========
+// ========z= Affiche la date du jour ==========
 function afficherDateDuJour() {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const aujourdHui = new Date();
