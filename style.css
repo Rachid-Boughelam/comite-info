@@ -35,6 +35,7 @@ h2.toggle-title,
   border: 1px solid #ccc;
   border-radius: 6px;
   transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .toggle-title:hover,
@@ -155,3 +156,35 @@ code {
   max-width: 1200px;
 }
 
+.alerte {
+      background-color: #ffdddd;
+      color: #a70000;
+      border: 2px solid #a70000;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 1.2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

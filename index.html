@@ -1,46 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Comité Informatique</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
-<body>
 
+<body>
   <h1>Bienvenue sur la page web de notre Comité Informatique</h1>
   <h2>Centre scolaire communautaire Samuel-de-Champlain</h2>
-<img src="cscsc-logo.png" width="100" alt="Logo CSCSC">
-
-<style>
-    .alerte {
-      background-color: #ffdddd;
-      color: #a70000;
-      border: 2px solid #a70000;
-      padding: 15px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      max-width: 600px;
-      margin: 30px auto;
-      font-size: 1.2em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
+  <img src="cscsc-logo.png" width="100" alt="Logo CSCSC">
 
   <div class="alerte">
     ⚠️ Pas de comité informatique mercredi 28 et jeudi 29 mai 2025
-  </div> 
+  </div>
 
   <!-- Présentation -->
   <div class="card">
     <h2 class="toggle-title">Présentation</h2>
     <div class="toggle-content hidden">
       <p>
-        Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.  
-        Retrouvez-nous à la bibliothèque chaque jour de 12h50 à 13h30.  
+        Nous sommes un petit comité informatique, ouvert à toutes les idées de projet.
+        Retrouvez-nous à la bibliothèque chaque jour de 12h50 à 13h30.
         Nous serons ravis d’échanger avec vous !
       </p>
       <p>Les membres :</p>
@@ -53,35 +35,37 @@
     </div>
   </div>
 
-  <!-- Projets -->
-  <div class="card">
-    <h2 class="toggle-title">Projets</h2>
+  <!-- Grille principale des cartes -->
+  <div class="card-grid">
 
-    <div class="toggle-content hidden">
-      <h3>Projet "Presque Fini" : affichage du nombre de jours restants avant la fin de l'année scolaire</h3>
-      <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
+    <!-- Projets -->
+    <div class="card">
+      <h2 class="toggle-title">Projets</h2>
+      <div class="toggle-content hidden">
+        <h3>Projet "Presque Fini" : affichage du nombre de jours restants avant la fin de l'année scolaire</h3>
+        <p><a href="https://presque-fini.onrender.com" target="_blank">https://presque-fini.onrender.com</a></p>
+      </div>
     </div>
-    
-  </div>
 
-  <!-- Apprentissage -->
-<div class="card">
-  <h2 class="toggle-title">Apprentissage</h2>
-  <div class="toggle-content hidden">
-    <!-- Sous-carte : Bases en algorithme -->
-    <div class="subcard">
-      <h3 class="sub-toggle-title">Bases en algorithme</h3>
-      <div class="sub-toggle-content hidden">
-        <p>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a></p>
+    <!-- Apprentissage HTML et CSS -->
+    <div class="card">
+      <h2 class="toggle-title">HTML et CSS</h2>
+      <div class="toggle-content hidden">
 
-        <ul><li>Déclaration de variables</li></ul>
-        <pre><code>const pays = "Canada";
+        <!-- Sous-carte : Algorithme -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Bases en algorithme</h3>
+          <div class="sub-toggle-content hidden">
+            <p>Va sur le site <a href="https://www.mycompiler.io/fr" target="_blank">https://www.mycompiler.io/fr</a></p>
+
+            <ul><li>Déclaration de variables</li></ul>
+            <pre><code>const pays = "Canada";
 var nom = "Alice";
 let age = 30;
 console.log("Bonjour, je m'appelle", nom, "je vis au", pays, "et j'ai", age, "ans.");</code></pre>
 
-        <ul><li>Conditions</li></ul>
-        <pre><code>let temperature = 25;
+            <ul><li>Conditions</li></ul>
+            <pre><code>let temperature = 25;
 
 if (temperature > 30) {
   console.log("Il fait très chaud !");
@@ -91,8 +75,8 @@ if (temperature > 30) {
   console.log("Il fait frais.");
 }</code></pre>
 
-        <ul><li>Boucles</li></ul>
-        <pre><code>// while
+            <ul><li>Boucles</li></ul>
+            <pre><code>// while
 let i = 0;
 while (i < 3) {
   console.log(i);
@@ -110,119 +94,108 @@ do {
 for (let k = 0; k < 3; k++) {
   console.log(k);
 }</code></pre>
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <!-- Sous-carte : HTML -->
-    <div class="subcard">
-      <h3 class="sub-toggle-title">Première application web avec HTML</h3>
-      <div class="sub-toggle-content hidden">
-        <ul>
-          <li>1. Télécharger <a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
-          <li>2. Créer un dossier nommé <code>test</code></li>
-          <li>3. Ouvrir ce dossier avec VS Code</li>
-          <li>4. Installer l'extension <strong>Live Server</strong></li>
-          <li>5. Créer un fichier <code>index.html</code> :</li>
-        </ul>
-        <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
-        <ul>
-          <li>6. Enregistrer (Ctrl + S)</li>
-          <li>7. Ouvrir avec Live Server</li>
-          <li><a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">Aller plus loin</a></li>
-        </ul>
-      </div>
-    </div>
+        <!-- Sous-carte : HTML -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Première application web avec HTML</h3>
+          <div class="sub-toggle-content hidden">
+            <ul>
+              <li>1. Télécharger <a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
+              <li>2. Créer un dossier nommé <code>test</code></li>
+              <li>3. Ouvrir ce dossier avec VS Code</li>
+              <li>4. Installer l'extension <strong>Live Server</strong></li>
+              <li>5. Créer un fichier <code>index.html</code> :</li>
+            </ul>
+            <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;</code></pre>
+            <ul>
+              <li>6. Enregistrer (Ctrl + S)</li>
+              <li>7. Ouvrir avec Live Server</li>
+              <li><a href="https://www.w3schools.com/Html/html_basic.asp" target="_blank">Aller plus loin</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- Sous-carte : CSS -->
-    <div class="subcard">
-      <h3 class="sub-toggle-title">Ajout du CSS pour le style</h3>
-      <div class="sub-toggle-content hidden">
-        <ul>
-          <li>1. Créer un fichier <code>style.css</code></li>
-          <li>2. Ajouter ce code :</li>
-        </ul>
-        <pre><code>h1 {
+        <!-- Sous-carte : CSS -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Ajout du CSS pour le style</h3>
+          <div class="sub-toggle-content hidden">
+            <ul>
+              <li>1. Créer un fichier <code>style.css</code></li>
+              <li>2. Ajouter ce code :</li>
+            </ul>
+            <pre><code>h1 {
   color: green;
 }</code></pre>
-        <ul>
-          <li>3. Enregistrer</li>
-          <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">Aller plus loin</a></li>
-        </ul>
+            <ul>
+              <li>3. Enregistrer</li>
+              <li><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">Aller plus loin</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Sous-carte : JS -->
-    <div class="subcard">
-      <h3 class="sub-toggle-title">Première interaction avec JavaScript</h3>
-      <div class="sub-toggle-content hidden">
-        <ul>
-          <li>1. Ajouter ce bouton à <code>index.html</code> :</li>
-        </ul>
-        <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
-        <ul>
-          <li>2. Créer un fichier <code>script.js</code> avec ce contenu :</li>
-        </ul>
-        <pre><code>document.getElementById('clic').addEventListener('click', () => {
+    <!-- Apprentissage JavaScript -->
+    <div class="card">
+      <h2 class="toggle-title">JavaScript</h2>
+      <div class="toggle-content hidden">
+
+        <!-- Sous-carte : Premier JS -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Première interaction avec JavaScript</h3>
+          <div class="sub-toggle-content hidden">
+            <ul>
+              <li>1. Ajouter ce bouton à <code>index.html</code> :</li>
+            </ul>
+            <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
+            <ul>
+              <li>2. Créer un fichier <code>script.js</code> avec ce contenu :</li>
+            </ul>
+            <pre><code>document.getElementById('clic').addEventListener('click', () => {
   alert('Tu as cliqué ! 🎉');
 });</code></pre>
-        <ul>
-          <li>3. Clique sur le bouton !</li>
-          <li><a href="https://www.w3schools.com/js/" target="_blank">Aller plus loin</a></li>
-        </ul>
-        <br>
-        <button id="clic">Clique-moi !</button>
-      </div>
-    </div>
+            <ul>
+              <li>3. Clique sur le bouton !</li>
+              <li><a href="https://www.w3schools.com/js/" target="_blank">Aller plus loin</a></li>
+            </ul>
+            <button id="clic">Clique-moi !</button>
+          </div>
+        </div>
 
-    <div class="subcard">
-  <h3 class="sub-toggle-title">Exercice : réalisation d'une carte virtuelle</h3>
-  <div class="sub-toggle-content hidden">
+        <!-- Sous-carte : Carte virtuelle -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Exercice : réalisation d'une carte virtuelle</h3>
+          <div class="sub-toggle-content hidden">
+            <h4>1ère étape : Structure HTML</h4>
+            <ul>
+              <li>Une <code>div</code> avec la classe <code>card</code>.</li>
+              <li>Une image, un titre <code>h2</code>, un paragraphe <code>p</code> et un bouton.</li>
+            </ul>
 
-    <h4>1ère étape : Structure HTML</h4>
-    <p>Créez une carte contenant :</p>
-    <ul>
-      <li>Une <code>div</code> avec la classe <code>card</code>.</li>
-      <li>Une image (avec <code>src</code> vers une photo et un <code>alt</code> descriptif).</li>
-      <li>Un titre <code>h2</code> avec un prénom.</li>
-      <li>Un paragraphe <code>p</code> décrivant brièvement la personne.</li>
-      <li>Un bouton <code>button</code> avec un texte "Changer couleur".</li>
-    </ul>
+            <h4>2ème étape : Personnalisation CSS</h4>
+            <p>Ajoutez du style : largeur, bordure, ombre, centrage, image ronde, style bouton.</p>
 
-    <h4>2ème étape : Personnalisation CSS</h4>
-    <p>Ajoutez du style pour :</p>
-    <ul>
-      <li>Définir la largeur de la carte, ajouter une bordure arrondie et une ombre.</li>
-      <li>Centrez le texte et appliquez une police agréable.</li>
-      <li>Rendre l'image ronde avec une taille fixe et un espace en dessous.</li>
-      <li>Styliser le bouton avec une couleur de fond bleue, texte blanc, coins arrondis et effet au survol.</li>
-    </ul>
+            <h4>3ème étape : Animation JS</h4>
+            <p>Écouteur d’événement, changer couleur fond carte.</p>
+          </div>
+        </div>
 
-    <h4>3ème étape : Animation JS</h4>
-    <p>Avec JavaScript :</p>
-    <ul>
-      <li>Sélectionnez la carte et le bouton dans le DOM.</li>
-      <li>Ajoutez un écouteur d’événement au clic sur le bouton.</li>
-      <li>Au clic, changez la couleur de fond de la carte en jaune clair.</li>
-    </ul>
-
-  </div>
-</div>
-
-<div class="subcard">
-  <h3 class="sub-toggle-title">Solution : réalisation d'une carte virtuelle</h3>
-  <div class="sub-toggle-content hidden">
-
-    <h4>1ère étape : Structure HTML</h4>
-    <pre><code>&lt;div class="card"&gt;
+        <!-- Sous-carte : Solution carte virtuelle -->
+        <div class="subcard">
+          <h3 class="sub-toggle-title">Solution : réalisation d'une carte virtuelle</h3>
+          <div class="sub-toggle-content hidden">
+            <h4>1ère étape : Structure HTML</h4>
+            <pre><code>&lt;div class="card"&gt;
   &lt;img src="photo.jpg" alt="Photo de profil" /&gt;
   &lt;h2&gt;Jean Dupont&lt;/h2&gt;
   &lt;p&gt;Développeur web débutant.&lt;/p&gt;
   &lt;button&gt;Changer couleur&lt;/button&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;</code></pre>
 
-    <h4>2ème étape : Personnalisation CSS</h4>
-    <pre><code>.card {
+            <h4>2ème étape : CSS</h4>
+            <pre><code>.card {
   width: 300px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -246,32 +219,83 @@ for (let k = 0; k < 3; k++) {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-}
-    </code></pre>
+}</code></pre>
 
-    <h4>3ème étape : Animation JS</h4>
-    <pre><code>
-      const card = document.querySelector('.card');
-      const button = document.querySelector('button');
+            <h4>3ème étape : JS</h4>
+            <pre><code>const card = document.querySelector('.card');
+const button = document.querySelector('button');
 
-      button.addEventListener('click', () => {
-      card.style.backgroundColor = '#fff9c4'; 
-    </code></pre>
-
-  </div>
-</div>
-
+button.addEventListener('click', () => {
+  card.style.backgroundColor = '#fff9c4';
+});</code></pre>
+          </div>
         </div>
+      </div>
+    </div>
 
+    <!-- Java -->
+    <div class="card">
+      <h2 class="toggle-title">Java</h2>
+      <div class="toggle-content hidden">
+        <div class="subcard">
+          <h3 class="sub-toggle-title">🎮 Premier projet Java : Le Jeu du Plus ou du Moins</h3>
+          <div class="sub-toggle-content hidden">
+            <p>1. Créer un projet Java (avec IntelliJ)</p>
+            <pre><code>package org.rachidboughelam;
 
+import java.util.Random;
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        while (true) {
+            Random rand = new Random();
+            int reponse = rand.nextInt(10) + 1;
+            int nombreSaisi = 0;
+
+            System.out.println("Une partie ? 1 pour oui, 2 pour non");
+            Scanner scanner1 = new Scanner(System.in);
+            int autrePartie = scanner1.nextInt();
+
+            if (autrePartie == 1) {
+                System.out.println("Tu as choisi oui");
+            } else if (autrePartie == 2) {
+                System.out.println("Tu as choisi non");
+                System.exit(0);
+            } else {
+                System.out.println("Erreur : tu dois taper 1 pour oui ou 2 pour non.");
+                System.exit(0);
+            }
+
+            System.out.println("Trouve le nombre mystère !");
+            while (reponse != nombreSaisi) {
+                Scanner scanner2 = new Scanner(System.in);
+                nombreSaisi = scanner2.nextInt();
+
+                if (nombreSaisi < reponse) {
+                    System.out.println("C'est plus !");
+                } else if (nombreSaisi > reponse) {
+                    System.out.println("C'est moins !");
+                } else {
+                    System.out.println("Bravo ! Tu as gagné");
+                }
+            }
+        }
+    }
+}</code></pre>
+            <p>2. Concepts : variables, boucle <code>while</code>, conditions <code>if/else</code>, <code>Scanner</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>    
-</div>
-  </div>
 
-  <!-- JavaScript -->
+  <!-- Script JavaScript -->
   <script src="script.js"></script>
-  
 </body>
+
 </html>
+
+<footer class="footer">
+  Made by RB with ❤️ for <a href="https://www.cscsc.ca" target="_blank">CSCSC</a>
+</footer>
