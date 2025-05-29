@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comité Informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="htmlcss.html">HTML & CSS</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="java.html">Java</a></li>
+    </ul>
+  </nav>
+
+<div class="main-content">
+
+      <h2 >Java</h2>
+      <div >
+        <div >
+          <h3 >Premier projet Java : Le Jeu du Plus ou du Moins</h3>
+          <div >
+                                <p>1. Créer un projet Java (avec IntelliJ)</p>
+                                <pre><code>package org.rachidboughelam;
+
+                    import java.util.Random;
+                    import java.util.Scanner;
+
+                    public class Main {
+                        public static void main(String[] args) {
+                            while (true) {
+                                Random rand = new Random();
+                                int reponse = rand.nextInt(10) + 1;
+                                int nombreSaisi = 0;
+
+                                System.out.println("Une partie ? 1 pour oui, 2 pour non");
+                                Scanner scanner1 = new Scanner(System.in);
+                                int autrePartie = scanner1.nextInt();
+
+                                if (autrePartie == 1) {
+                                    System.out.println("Tu as choisi oui");
+                                } else if (autrePartie == 2) {
+                                    System.out.println("Tu as choisi non");
+                                    System.exit(0);
+                                } else {
+                                    System.out.println("Erreur : tu dois taper 1 pour oui ou 2 pour non.");
+                                    System.exit(0);
+                                }
+
+                                System.out.println("Trouve le nombre mystère !");
+                                while (reponse != nombreSaisi) {
+                                    Scanner scanner2 = new Scanner(System.in);
+                                    nombreSaisi = scanner2.nextInt();
+
+                                    if (nombreSaisi < reponse) {
+                                        System.out.println("C'est plus !");
+                                    } else if (nombreSaisi > reponse) {
+                                        System.out.println("C'est moins !");
+                                    } else {
+                                        System.out.println("Bravo ! Tu as gagné");
+                                    }
+                                }
+                            }
+                        }
+                    }</code></pre>
+            <p>2. Concepts : variables, boucle <code>while</code>, conditions <code>if/else</code>, <code>Scanner</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+
+<footer class="footer">
+  Made by RB with ❤️ for <a href="https://www.cscsc.ca" target="_blank">CSCSC</a>
+</footer>

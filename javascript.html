@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comité Informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="htmlcss.html">HTML & CSS</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="java.html">Java</a></li>
+    </ul>
+  </nav>    
+  
+<div class="main-content">
+
+      <h2>JavaScript</h2>
+      <div >
+
+        <div >
+          <h3 >Première interaction avec JavaScript</h3>
+          <div >
+            <ul>
+              <li>1. Ajouter ce bouton à <code>index.html</code> :</li>
+            </ul>
+            <pre><code>&lt;button id="clic"&gt;Clique-moi !&lt;/button&gt;</code></pre>
+            <ul>
+              <li>2. Créer un fichier <code>script.js</code> avec ce contenu :</li>
+            </ul>
+            <pre><code>document.getElementById('clic').addEventListener('click', () => {
+  alert('Tu as cliqué ! 🎉');
+});</code></pre>
+            <ul>
+              <li>3. Clique sur le bouton !</li>
+              <li><a href="https://www.w3schools.com/js/" target="_blank">Aller plus loin</a></li>
+            </ul>
+            <button id="clic">Clique-moi !</button>
+          </div>
+        </div>
+
+        <div >
+          <h3 >Exercice : réalisation d'une carte virtuelle</h3>
+          <div >
+            <h4>1ère étape : Structure HTML</h4>
+            <ul>
+              <li>Une <code>div</code> avec la classe <code>card</code>.</li>
+              <li>Une image, un titre <code>h2</code>, un paragraphe <code>p</code> et un bouton.</li>
+            </ul>
+
+            <h4>2ème étape : Personnalisation CSS</h4>
+            <p>Ajoutez du style : largeur, bordure, ombre, centrage, image ronde, style bouton.</p>
+
+            <h4>3ème étape : Animation JS</h4>
+            <p>Écouteur d’événement, changer couleur fond carte.</p>
+          </div>
+        </div>
+
+        <div >
+          <h3 >Solution : réalisation d'une carte virtuelle</h3>
+          <div >
+            <h4>1ère étape : Structure HTML</h4>
+            <pre><code>&lt;div class="card"&gt;
+  &lt;img src="photo.jpg" alt="Photo de profil" /&gt;
+  &lt;h2&gt;Jean Dupont&lt;/h2&gt;
+  &lt;p&gt;Développeur web débutant.&lt;/p&gt;
+  &lt;button&gt;Changer couleur&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>2ème étape : CSS</h4>
+            <pre><code>.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}</code></pre>
+
+            <h4>3ème étape : JS</h4>
+            <pre><code>const card = document.querySelector('.card');
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  card.style.backgroundColor = '#fff9c4';
+});</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>
+
+<footer class="footer">
+  Made by RB with ❤️ for <a href="https://www.cscsc.ca" target="_blank">CSCSC</a>
+</footer>
