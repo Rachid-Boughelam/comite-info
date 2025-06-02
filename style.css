@@ -194,3 +194,12 @@ li {
     padding: 0 6px;
   }
 }
+.membres-liste {
+  list-style-type: none; /* enlève les puces */
+  padding: 0;
+  text-align: center;
+}
+
+.membres-liste li {
+  margin-bottom: 5px; /* espace entre les noms */
+}
